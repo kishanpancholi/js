@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsfile3</title>
+</head>
+<body>
+    <!-- <h1>JavaScript Functions</h1>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+    <p id="demo4"></p>
+
+    <script>
+        function myfuncation(p1, p2){
+            return p1 + p2;
+        }
+
+        let result = myfuncation(25, 27);
+        document.getElementById("demo").innerHTML= result
+
+        // The () Operator
+        function toCelsius(f){
+           return (5/9) * (f-33)
+    }
+
+    let x = 77;
+    let value= toCelsius(x);
+    document.getElementById("demo2").innerHTML= value;
+
+    // Functions Used as Variable Values
+    function kishan(k){
+        return (5/9) * (k-44)
+    }
+
+    let text= "the temperture is" + kishan(77) + "celsius" ;
+    document.getElementById("demo3").innerHTML= text;
+
+    // Local Variables
+    function vehical(){
+        let carname= "audi";
+        let text= "inside" + typeof carname + " " + carname;
+        document.getElementById("demo4").innerHTML= text;
+    }
+
+    vehical();
+
+    </script> -->
+
+
+    <h1>JavaScript Objects</h1> 
+
+    <p id="cdemo1"></p>
+
+    <p id="cdemo2"></p>
+
+    <p id="cdemo3"></p>
+
+    <p id="cdemo4"></p>
+
+    <script>
+        let x= "creta"
+        document.getElementById("cdemo1").innerHTML= x;
+
+        const car= {type:"creta", model:"500", color:"black"};
+
+        document.getElementById("cdemo2").innerHTML= "the car color is " + car . color + " car type is " + car. type;
+
+        x="person"
+        document.getElementById("cdemo3").innerHTML= x;
+        const person= {firstname:"kishan", age:"20"};
+        document.getElementById("cdemo3").innerHTML= person["firstname"] + person[ "age"];
+
+        x="bike"
+        const bike= {type: "ninja", model: "400",
+        info: function (){
+            return bike["type"] + bike["model"];
+        } 
+    };
+
+    document.getElementById("cdemo4").innerHTML= bike.info();
+
+
+
+    </script>
+         
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js string search</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+
+    <p>The position of the first occurrence of "locate" is:</p>
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+    <p>Perform a search for "ain":</p>
+    <p id="demo4"></p>
+
+    <p>Perform a global search for "ain":</p>
+    <p id="demo5"></p>
+
+    <p id="demo6"></p>
+
+    <!--  The includes() Method -->
+
+    <p>Check if a string includes "world":</p>
+    <p id="demo7"></p>
+
+    <p>Check if a string includes "world" starting from position 12:</p>
+    <p id="demo8"></p>
+    
+    <!-- String startsWith() -->
+    <p>Check if a string starts with "Hello":</p>
+    <p id="demo9"></p>
+
+    <script>
+    //  String indexOf()
+
+    let text= "Please locate where 'locate' occure";
+    let index= text.indexOf("locate");
+    document.getElementById("demo").innerHTML= index;
+
+    text= "Please locate where 'locate' occure";
+    index= text.indexOf("locate", 13);
+    document.getElementById("demo2").innerHTML= index;
+
+    // lastIndexOf() Method
+    text= "Please locate where 'locate' occure";
+    index= text.lastIndexOf("locate");
+    document.getElementById("demo1").innerHTML= index;
+
+    text= "Please locate where 'locate' occure";
+    index= text.lastIndexOf("locate", 13);
+    document.getElementById("demo3").innerHTML= index;
+
+    // String match()
+    text="The rain in SPAIN stays mainly in the plain";
+    const myArr = text.match("ain");
+    document.getElementById("demo4").innerHTML = myArr.length + " " + myArr;
+
+    text="The rain in SPAIN stays mainly in the plain";
+    const kishan = text.match(/ain/gi);
+    document.getElementById("demo5").innerHTML = kishan.length + " " + kishan;
+
+    // The matchAll() Method
+    text = "I love cats. Cats are very easy to love. Cats are very popular."
+    const animal= text.matchAll("cats");
+    document.getElementById("demo6").innerHTML= Array.from(animal);
+
+    // The includes() Method
+    text= "hello world, welcome to my world";
+    document.getElementById("demo7").innerHTML= text.includes("world");
+
+    text= "hello world, welcome to my world";
+    document.getElementById("demo8").innerHTML= text.includes("world", 30);
+
+    // String startsWith()
+    text = "Hello world, welcome to the universe.";
+    document.getElementById("demo9").innerHTML = text.startsWith("Hello");
+
+
+</script>
+</body>
+</html>

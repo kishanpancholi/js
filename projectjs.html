@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsproject1</title>
+</head>
+<body>
+    <textarea id="loremupper" cols="100%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est recusandae sed nihil saepe nam sapiente? Id, iusto aut sapiente sed quas atque rerum itaque. Quibusdam sit vel iure labore minima?</textarea>
+
+    <button onclick="kishan()">UpperCase</button> <button onclick="kishan2()">lowerCase</button>
+    <p id="demo2"></p>    
+
+   
+    <p id="demo3"></p>    
+
+    <script>
+
+        function kishan(){
+            let text =document.getElementById("loremupper").innerHTML;
+            document.getElementById("demo2").textContent= text.toUpperCase();
+        }
+
+        function kishan2(){
+            let text =document.getElementById("loremupper").innerHTML;
+            document.getElementById("demo3").textContent= text.toLowerCase();
+        }
+    </script>
+    
+</body>
+</html>

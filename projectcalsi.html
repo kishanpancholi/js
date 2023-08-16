@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project calculator</title>
+</head>
+<body>
+
+    <input id="in1" input="text"> 
+    <input id="in2" input="text"> 
+
+    <button  onclick="sum()">+</button> <button onclick="minus()">-</button> <button onclick="into()">*</button> <button onclick="divide()">/</button>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+    <p id="demo4"></p>
+
+    <script>
+       function sum(){
+       let text1= document.getElementById("in1").value;
+       let text2 =document.getElementById("in2").value;
+       document.getElementById("demo").innerHTML=parseInt(text1)+parseInt(text2);
+       }
+
+       function minus(){
+        text1= document.getElementById("in1").value;
+        text2 =document.getElementById("in2").value;
+        document.getElementById("demo2").innerHTML= parseInt(text1)-parseInt(text2);
+       }
+
+       function into(){
+        text1= document.getElementById("in1").value;
+        text2=document.getElementById("in2").value;
+        document.getElementById("demo3").innerHTML= parseInt(text1)*parseInt(text2);
+       }
+
+       function divide(){
+        text1= document.getElementById("in1").value;
+        text2= document.getElementById("in2").value;
+        document.getElementById("demo4").innerHTML= parseInt(text1)/parseInt(text2);
+       }
+    </script>
+</body>
+</html>

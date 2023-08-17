@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <button onclick="myfuncation()">CLICK TO ADD</button>
+    <P id="demo7"></P>
+
+
+
+    <script>
+        const car =["Audi", "Thar", "BMW"];
+        document.getElementById("demo").innerHTML= car;
+
+
+        // Accessing Array Elements
+        const cars=[];
+        cars[0]="audi";
+        cars[1]="bmw";
+        cars[2]="thar";
+        cars[3]="creta";
+        document.getElementById("demo1").innerHTML= cars[1];
+
+         // Accessing last Array Elements
+         const mobile=[];
+        mobile[0]="nokia";
+        mobile[1]="samsung";
+        mobile[2]="apple";
+        mobile[3]="oppo";
+        document.getElementById("demo6").innerHTML= mobile[mobile.length -1];
+        
+
+        // Using the JavaScript Keyword new
+        const bike= new Array("tiger", "TATA", "bmw");
+        document.getElementById("demo2").innerHTML= bike;
+
+        // Changing an Array Element
+        const food= ["pizza", "burger", "pasta"];
+        food[0]= "sendwich";
+        document.getElementById("demo3").innerHTML= food;
+
+        // Arrays are Objects
+        const person = {firstName:"kishan", lastName:"pancholi", age:20};
+        document.getElementById("demo4").innerHTML = person.firstName;
+
+        // Array length Property
+        const fruits= ["mango", "banana", "apple", "orange"];
+        let size = fruits.length;
+        document.getElementById("demo5").innerHTML= size;
+
+        // Adding Array Elements
+        const vegis = ["Carrot", "Capsicum", "Ginger"];
+        document.getElementById("demo7").innerHTML = vegis;
+
+        function myfuncation(){
+            vegis.push("Potato")
+            document.getElementById("demo7").innerHTML= vegis;
+        }
+
+        for (let i=0;i<=100;i++)
+        document.write(i +"<br>");
+
+    </script>
+</body>
+</html>

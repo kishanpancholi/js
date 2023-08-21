@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array method</title>
+</head>
+<body>
+    <h2>The shift() Method</h2>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <h2>The unshift() Method</h2>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <h2>The length Property</h2>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <h2>The delete Method</h2>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <h2>The concat() Method</h2>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+        let fruits= ["banana", "orange", "mango", "kiwi"];
+        document.getElementById("demo").innerHTML= fruits; fruits.shift();
+        document.getElementById("demo1").innerHTML= fruits;
+
+        fruits= ["watermalon", "apple", "graps",];
+        document.getElementById("demo2").innerHTML= fruits; fruits.unshift("lemon");
+        document.getElementById("demo3").innerHTML= fruits;
+
+        fruits= ["banana", "orange", "mango"];
+        document.getElementById("demo4").innerHTML= fruits; fruits[fruits.length]= "kiwi";
+        document.getElementById("demo5").innerHTML= fruits;
+
+        fruits= ["banana", "orange", "mango", "kiwi"];
+
+        document.getElementById("demo6").innerHTML= "the fruits is:" + fruits[1];
+
+        delete fruits[1];
+
+        document.getElementById("demo7").innerHTML= "the fruits is:" + fruits[1];
+
+        let girls= ["divya", "dharti", "vruchi"];
+        let boys= ["akshay", "harsh", "surya"];
+        let mychildern = girls.concat(boys);
+
+        document.getElementById("demo8").innerHTML= mychildern;
+
+        let myarray= ["kishan", "mohit", "atmiy"];
+        let frds= myarray.concat("akshay")
+        document.getElementById("demo10").innerHTML= frds;
+
+    </script>
+</body>
+</html>

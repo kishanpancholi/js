@@ -1,0 +1,76 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array shorting</title>
+</head>
+<body>
+    <h2>The sort() Method</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <h2>Sort in Reverse</h2>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <h2>Numeric Sort</h2>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <h2>The Compare Function</h2>
+    <button onclick="myfuncation1()">Alphabetically</button>
+    <button onclick="myfuncation2()">Numerically </button>
+    <p>Click the buttons to sort the array alphabetically or numerically.</p>
+    <p id="demo6"></p>
+
+    <h2>Sorting an Array in Random Order</h2>
+    <button onclick="kishan()">click and Try.</button>
+    <p id="demo7"></p>
+    
+    <script>
+        // The sort() Method
+        let car= ["audi", "volvo", "swift"];
+        document.getElementById("demo").innerHTML= car;
+
+        car.sort();
+        document.getElementById("demo1").innerHTML= car;
+
+        // Sort in Reverse
+        car= ["audi", "volvo", "swift"];
+        document.getElementById("demo2").innerHTML= car;
+
+        car.sort();car.reverse();
+        document.getElementById("demo3").innerHTML= car;
+
+        // Numeric Sort
+        let points= [20, 100, 45, 2, 8];
+        document.getElementById("demo4").innerHTML= points;
+
+        points.sort(function(a, b){return a-b});
+        document.getElementById("demo5").innerHTML= points;
+
+        // The Compare Function
+        points =[3,120,40,2,8,146];
+        document.getElementById("demo6").innerHTML= points;
+
+        function myfuncation1(){
+            points.sort();
+            document.getElementById("demo6").innerHTML= points;
+        }
+
+        function myfuncation2(){
+        points.sort(function(a,b){return a-b});
+        document.getElementById("demo6").innerHTML= points;
+        }
+
+        // Sorting an Array in Random Order
+        points =[3,120,40,2,8,146];
+        document.getElementById("demo7").innerHTML= points;
+
+        function kishan(){
+            points.sort(function(){return 0.5 - Math.random()});
+            document.getElementById("demo7").innerHTML= points;
+        }
+        </script>
+</body>
+</html>
+        

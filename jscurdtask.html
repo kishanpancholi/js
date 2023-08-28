@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSCURDTASK</title>
+    </head>
+    <style>
+        table, th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+<body>
+    <p id="demo"></p>
+       
+        <label for="text" id="demo">First Name</label>
+        <input type="text" name="Firstname" id="fname">
+    
+<br>
+
+        <label for="text">Last Name</label>
+        <input type="text" name="lastname" id="lname">
+    
+<br>
+
+        <label for="text">Email Id</label>
+        <input type="text" name="emailid" id="mail">
+    
+<br>
+
+        <label for="text">contect</label>
+        <input type="tel" name="contact" id="cnum">
+    
+<br>
+
+    <label for="text">city</label>
+    <input type="text" name="city" id="city">
+    
+ <br>
+    <button onclick="kishan()">Submit</button>  
+
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>contact</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        
+        <tbody style="text-align: center;">
+            <tr>
+                <td id="pfname"></td>
+                <td id="plname"></td>
+                <td id="pmail"></td>
+                <td id="pcontact"></td>
+                <td id="pcity"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+
+    <script>
+        function kishan(){
+            let text =document.getElementById("fname").value;
+            document.getElementById("pfname").textContent= text;
+
+            let surname =document.getElementById("lname").value;
+            document.getElementById("plname").textContent= surname;
+       
+            let email =document.getElementById("mail").value;
+            document.getElementById("pmail").textContent= email;
+        
+            let city =document.getElementById("cnum").value;
+            document.getElementById("pcontact").textContent= city;
+
+            let ct =document.getElementById("city").value;
+            document.getElementById("pcity").textContent= ct;
+        }
+    </script>
+</body>
+</html>

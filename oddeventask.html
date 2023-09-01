@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oddeventask</title>
+</head>
+<body>
+    <input type="text" name="" id="findnum">
+
+    <button onclick="myfuncation()">click to Find</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myfuncation(){
+            let n=document.getElementById("findnum").value;
+            
+            if(n%2==0){
+                document.getElementById("demo").innerHTML= n + "even number";
+            }
+
+            else{
+                document.getElementById("demo").innerHTML= n + "odd number";
+                }
+            }
+            
+        
+    </script>
+</body>
+</html>

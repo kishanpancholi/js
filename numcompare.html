@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the large number</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let n1 = 10;
+        let n2= 25;
+        let n3= 40;
+
+        if(n1 > n2 && n1>n3){
+            document.getElementById("demo").innerHTML= n1 + "is large number";
+        }
+
+        else if(n2 > n1 && n2>n3){
+            document.getElementById("demo").innerHTML= n2 + "is large number";
+        }
+
+        else{
+            document.getElementById("demo").innerHTML= n3 + " is large number";;
+        }
+
+
+    </script>
+</body>
+</html>

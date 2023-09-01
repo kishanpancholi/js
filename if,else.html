@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if, else, and else if</title>
+</head>
+<body>
+    <p id="demo">Good Day</p>
+
+    <p id="demo1"></p>
+    
+    <script>
+        if (new Date().gethours() < 15);
+        document.getElementById("demo").innerHTML= "Good Afternoon";
+
+        const time= new Date().gethours();
+        let greetings;
+        if (time < 12){
+        greetings= "good morning";
+        } else if (time < 16){
+            greetings= "good afternoon";
+        } else{
+            greetings= "good day";
+        }
+        document.getElementById("demo1").innerHTML= greetings;
+    </script>
+</body>
+</html>

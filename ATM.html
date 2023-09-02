@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task ATM</title>
+</head>
+<body>
+    <h2>Welcome To Atm</h2>
+    <label>Enter the pin </label>
+    <input type="password" id="money">
+    <button onclick="pincheck()">Submit</button>
+    <div>
+        <p id="wth"></p>
+        <div id="am" style="display: none;">
+        <label> Enter Withdrawal Amount : </label>
+        <input type="number" id="wamount">
+        <button onclick="withdrawamount()"> Withdraw </button>
+        </div>
+    </div>
+
+    <p id="msg"></p>
+
+    <script>
+        const pin ="0987";
+        let balance= "5000";
+
+        function pincheck(){
+            const epin= document.getElementById("money").value;
+            const massage= document.getElementById("wth");
+            
+            if(epin === pin){
+                massage.textContent= "YOUR PIN IS CORRECT. Now you can withdraw your money. ";
+                document.getElementById("am").style.display = "block";
+            }
+
+            else{
+                message.textContent=" Please Enter Your Correct PIN .";
+            }
+        }
+
+        function withdrawamount(){
+            const wamount= document.getElementById("wamount").value;
+            const massage= document.getElementById("msg");
+
+            if (wamount > 0 && wamount <= balance){
+                message.textContent= "Withdrawal Is successful . Remaining balance Is : " + Mbalance ;
+            }
+
+            else if(wamount <= 0 ){
+                document.getElementById("msg").innerHTML= "Please enter a valid withdrawal amount . ";
+            }
+
+            else{
+                document.getElementById("msg").innerHTML= "Insufficient Balance for withdrawal.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS MAP</title>
+</head>
+<body>
+    <h2>The new Map() Method</h2>
+    <p id="demo"></p>
+
+    <h2>The set() Method</h2>
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+
+    <h2>The size Property</h2>
+    <p id="demo3"></p>
+
+    <h2>The delete() Method</h2>
+    <p id="demo4"></p>
+
+    <h2>The has() Method</h2>
+    <p id="demo5"></p>
+
+    <p id="demo6"></p>
+
+    <h2>The forEach() Method</h2>
+    <p id="demo7"></p>
+
+    <script>
+        // The new Map() Method
+        let car= new Map ([
+            ["volvo", 500],
+            ["fanti", 250],
+            ["bmw", 600]
+        ]);
+
+        document.getElementById("demo").innerHTML= car.get("volvo");
+
+        const fruits= new Map();
+
+        fruits.set("apples", 500);
+        fruits.set("bananas", 300);
+        fruits.set("oranges", 200);
+
+        document.getElementById("demo1").innerHTML= fruits.get("bananas");
+
+        const bike= new Map([
+            ["shine", 100],
+            ["bmw", 200],
+            ["GT", 500]
+        ]);
+
+        bike.set("bmw" , 300);
+
+        document.getElementById("demo2").innerHTML= bike.get("bmw");
+
+        // The size Property
+        car= new Map ([
+            ["volvo", 500],
+            ["fanti", 250],
+            ["bmw", 600],
+            ["audi", 900]
+        ]);
+
+        document.getElementById("demo3").innerHTML= car.size;
+
+        // The delete() Method
+        let lap = new Map([
+            ["dell", 40],
+            ["lenovo", 20],
+            ["hp", 60]
+        ]);
+
+        lap.delete("lenovo");
+
+        document.getElementById("demo4").innerHTML= lap.size;
+
+        // The has() Method
+        lap = new Map([
+            ["dell", 40],
+            ["lenovo", 20],
+            ["hp", 60]
+        ]);
+
+        // lap.has("macbook");
+
+        document.getElementById("demo5").innerHTML= lap.has("dell");
+
+        lap = new Map([
+            ["dell", 40],
+            ["lenovo", 20],
+            ["hp", 60]
+        ]);
+
+        lap.delete("dell");
+
+        document.getElementById("demo6").innerHTML= lap.has("dell");
+
+
+        lap = new Map([
+            ["dell", 40000],
+            ["lenovo", 20000],
+            ["hp", 60000]
+        ]);
+
+        let text="";
+        lap.forEach (function(value, key) {
+        text += key + ' = ' + value + "<br>"          
+        })
+
+        document.getElementById("demo7").innerHTML= text;
+
+
+
+    </script>
+</body>
+</html>

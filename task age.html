@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGE Task</title>
+    <h2>Find Age</h2> 
+    <input type="text" id="birth">
+    <button onclick="findage()">Submit</button>
+    <p id="demo"></p>
+</head>
+<body>
+    <script>
+         function findage(){
+            let today= new Date()
+            let year = today.getFullYear();
+            let text= document.getElementById("birth").value;
+            document.getElementById("demo").innerHTML = year-text + " is your age";       
+            
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kilo-Mile Task</title>
+</head>
+<body>
+    <h2>Convert Kilomiter to Mile</h2>
+    <input type="text" id="con"> 
+    <button onclick="changemile()">Convert</button>
+    <p id="kilo"></p>
+
+    <script>
+
+        function changemile(){
+            let text= document.getElementById("con").value;
+           
+            const Km = 15; 
+            const mile = Km* 0.621371;
+
+            document.getElementById("kilo").innerHTML = mile;
+                
+        }
+    </script>
+</body>
+</html>
+

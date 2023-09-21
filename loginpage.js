@@ -6,8 +6,8 @@
    const p = document.getElementById("typePasswordX").value;
 
    if (e == email && p == pass){
-    alert("Log In Succesfully");
-   }
+    window.location.href = "file:///D:/kishan/javascript/js/markstask.html";
+        }
    else{
     document.getElementById("check").innerHTML= "Please Enter Valid Username And Password";
    }

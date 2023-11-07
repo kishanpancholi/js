@@ -1,5 +1,11 @@
+ function fpass(){
+  email = "kishanpacholi@gmail.com";
+  document.getElementById("fpmail").value;
+
+ }
+ 
  function clogin(){
-   const email = "kishanpancholi@gmail.com";
+   let email = "kishanpancholi@gmail.com";
    const pass = "kishan123";
       
    const e = document.getElementById("typeEmailX").value;
